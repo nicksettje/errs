@@ -27,11 +27,6 @@ Type-safe error handling for Python.
 * Documentation: https://errs.readthedocs.io.
 
 
-Features
---------
-
-* TODO
-
 Credits
 -------
 

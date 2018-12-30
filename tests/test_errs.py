@@ -6,7 +6,7 @@
 import pytest
 
 
-from errs.errs import errs, ErrorResult
+from errs import errs, ErrorResult
 
 
 def test_error_result_is_not_error():

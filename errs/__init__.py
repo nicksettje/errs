@@ -5,3 +5,5 @@
 __author__ = """Nick Frederick Settje"""
 __email__ = 'nsettje@alumni.stanford.edu'
 __version__ = '0.1.0'
+
+from .errs import errs, ErrorResult 

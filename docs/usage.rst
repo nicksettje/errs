@@ -4,4 +4,4 @@ Usage
 
 To use errs in a project::
 
-    import errs
+.. literalinclude:: ../examples/example.py
