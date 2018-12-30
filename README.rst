@@ -42,19 +42,19 @@ This leads to code that is more explicit about error handling as well as resilie
 Additionally, all exceptions wrapped by `@errs` will be logged to the default Python logger on the error level. This provides a powerful abstraction where runtime behaviors are logged and separated from current application state.
 
 .. codeblock:: python
-    from errs import errs
+   from errs import errs
 
-    @errs
-    def raises(): #type: () -> int
-        raise Exception('this will get logged')
-        return 0
+   @errs
+   def raises(): #type: () -> int
+       raise Exception('this will get logged')
+       return 0
 
-    def check_error(): #type: () -> None
-        out, err = raises()
-        print('Error: {err}'.format(err.check()))
+   def check_error(): #type: () -> None
+       out, err = raises()
+       print('Error: {err}'.format(err.check()))
 
-    if __name__ == '__main__':
-        check_error() #prints Error: True
+   if __name__ == '__main__':
+       check_error() #prints Error: True
 
 
 Credits
