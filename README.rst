@@ -41,7 +41,7 @@ This leads to code that is more explicit about error handling as well as resilie
 
 Additionally, all exceptions wrapped by `@errs` will be logged to the default Python logger on the error level. This provides a powerful abstraction where runtime behaviors are logged and separated from current application state.
 
-.. code-block:: python
+.. code-block::
     from errs import errs
 
     @errs
