@@ -1,7 +1,7 @@
 from errs import errs
 
 @errs
-def raises(): #type () -> int
+def raises(): #type: () -> int
     raise Exception()
     return 0
 
