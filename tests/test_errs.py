@@ -6,27 +6,29 @@
 import pytest
 
 
-from errs.errs import errs
+from errs.errs import errs, ErrorResult
 
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
+def test_error_result_is_not_error():
+    assert(ErrorResult().check() is False)
 
 
-def test_no_error(response):
+def test_no_error_return():
+    @errs
+    def return_me(*args):
+        return args 
+    out , err = return_me(1, 2, 3)
+    assert(out == (1, 2, 3))
+
+
+def test_no_error():
     @errs
     def no_raises():
         return 0
     out, err = no_raises()
     assert(err.check() == False)
 
-def test_error(response):
+def test_error():
     @errs
     def raises():
         raise Exception()
