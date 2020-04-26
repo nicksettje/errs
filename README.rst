@@ -31,7 +31,9 @@ Type-safe error handling for Python.
 
 Installation
 ------------
-`pip install errs`
+.. code-block:: bash
+
+        pip install errs
 
 Usage
 -----
