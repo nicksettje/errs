@@ -11,11 +11,8 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
-
-setup_requirements = ['pytest-runner', ]
-
-test_requirements = ['pytest', ]
+extras_require = {
+    'test': ['pytest', 'pytest-cov', 'mypy', 'flake8']}
 
 setup(
     author="Nick Frederick Settje",
@@ -29,16 +26,15 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     description="Type-safe error handling for Python.",
-    install_requires=requirements,
+    install_requires=[],
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='errs',
     name='errs',
     packages=find_packages(include=['errs']),
-    setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
+    extras_require=extras_require,
     url='https://github.com/nicksettje/errs',
     version='0.1.1',
     zip_safe=False,
