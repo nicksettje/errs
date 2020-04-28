@@ -1,21 +1,12 @@
 ====
 errs
 ====
-
-
-.. image:: https://img.shields.io/pypi/v/errs.svg
-        :target: https://pypi.python.org/pypi/errs
-
-.. image:: https://img.shields.io/travis/nicksettje/errs.svg
-        :target: https://travis-ci.org/nicksettje/errs
-
-.. image:: https://codecov.io/gh/nicksettje/errs/branch/master/graph/badge.svg
-        :target: https://codecov.io/gh/nicksettje/errs
+.. image:: https://github.com/nicksettje/errs/workflows/Python%20package/badge.svg
+        :target: https://github.com/nicksettje/errs/actions
 
 .. image:: https://readthedocs.org/projects/errs/badge/?version=latest
         :target: https://errs.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
-
 
 .. image:: https://pyup.io/repos/github/nicksettje/errs/shield.svg
      :target: https://pyup.io/repos/github/nicksettje/errs/
